@@ -3,7 +3,7 @@
 # Mi computador principal
 
 * Marca/modelo: -
-* Tipo: Tower
+* Tipo: Escritorio
 * Año adquisición: -
 * Procesador:
   * Marca/Modelo: Intel Core i5-10400F
