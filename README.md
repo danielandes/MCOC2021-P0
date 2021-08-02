@@ -14,9 +14,9 @@
   * Arquitectura: Comet Lake
   * Set de instrucciones:   MMX, SSE, SSE2, SSE3, SSE4.1, SSE 4.2, EM64T, VT-x, AES, AVX, AVX2, FMA3
 * Tamaño de las cachés del procesador
-  * L1d: 32KB
-  * L1i: 32KB
-  * L2: 256KB
+  * L1d: 32KB x6
+  * L1i: 32KB x6
+  * L2: 256KB x6
   * L3: 12MB
 * Memoria 
   * Total: 16 GB
