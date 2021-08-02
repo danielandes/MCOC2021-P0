@@ -32,7 +32,6 @@
   * Tipo: HDD
   * Tamaño: 1TB
   * Particiones: 4
-  * Sistema de archivos: EXT4, swap
 
 
   
