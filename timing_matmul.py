@@ -1,10 +1,28 @@
-from numpy import zeros
+from numpy import zeros, float64
 from time import perf_counter
-N=1000
-A=zeros((N,N))+1
-B=zeros((N,N))+2
-t1=perf_counter()
-C=A@B
-t2=perf_counter()
-t=t2-t1
-print("dt=",t)
+import matplotlib.pylab as plt
+N=[10,20,50,100,200,500,1000,2000,5000,10000] #,2000,5000,10000
+
+UsoMemoria=[]
+UsoTiempo=[]
+Nlista=[]
+for a in range(10):
+    for i in N:
+        A=zeros((i,i), dtype=float64)+1
+        B=zeros((i,i), dtype=float64)+2
+        t1=perf_counter()
+        C=A@B
+        t2=perf_counter()
+        t=t2-t1
+        UsoTiempo.append(t)
+        memoria= A.nbytes + B.nbytes + C.nbytes
+        UsoMemoria.append(memoria)
+        Nlista.append(i)
+
+
+
+#Creacion del archivo para guardar datos
+archivo= open("usorecursos.txt", "w+")
+for i in range(len(N*10)):
+    archivo.write(str(UsoMemoria[i])+" "+str(UsoTiempo[i])+" "+str(Nlista[i])+" "+"\n")
+archivo.close()
