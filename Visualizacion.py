@@ -1,0 +1,52 @@
+# -*- coding: utf-8 -*-
+"""
+Created on Thu Aug  5 16:02:23 2021
+
+@author: aleki
+"""
+from numpy import zeros, float64
+from time import perf_counter
+import matplotlib.pylab as plt
+#Recuperacion de datos desde el archivo
+Memoriatxt=[]
+Tiempotxt=[]
+Ntxt=[]
+lectura= open("usorecursos.txt", "r")
+for i in lectura:
+    valores=i.split(" ")
+    valores.pop()
+    Memoriatxt.append(float(valores[0]))
+    Tiempotxt.append(float(valores[1]))
+    Ntxt.append(float(valores[2]))
+lectura.close()
+
+
+#Graficar
+xlabels= ["10","20","50","100","200","500","1000","2000","5000","10000","20000"]
+xN=[10,20,50,100,200,500,1000,2000,5000,10000,20000]
+ytiempolabels= ["0.1 ms","1 ms","10 ms","0.1 s","1 s","10 s","1 min","10 min"]
+ytiempoT=[(10**-4),(10**-3),(10**-2),(10**-1),(1),(10),(60),(600)]
+ymemorialabels= ["1 KB","10 KB","100 KB","1 MB","10 MB","100 MB","1 GB","10 GB"]
+ymemoriaB= [(10**3),(10**4),(10**5),(10**6),(10**7),(10**8),(10**9),(10**10)]
+
+
+plt.figure(1)
+plt.subplot(2,1,1)
+plt.title("Rendimiento A@B")
+for i in range(10):
+    plt.loglog(Ntxt[10*i:10*i+10],Tiempotxt[10*i:10*i+10], marker="o")
+plt.xticks(xN,xlabels, rotation=60, visible=False)
+plt.grid(True)
+plt.yticks(ytiempoT,ytiempolabels)
+plt.ylabel("Tiempo transcurrido")
+
+
+plt.subplot(2,1,2)
+plt.loglog(Ntxt,Memoriatxt, marker="o")
+plt.xticks(xN,xlabels, rotation=60)
+plt.yticks(ymemoriaB,ymemorialabels)
+plt.grid(True)
+plt.axhline(y=1.6*10**10, linestyle="--", color="black")
+plt.ylabel("Uso memoria")
+plt.xlabel("Tamano matriz N")
+plt.show()
