@@ -1,9 +1,3 @@
-# -*- coding: utf-8 -*-
-"""
-Created on Thu Aug  5 16:02:23 2021
-
-@author: aleki
-"""
 from numpy import zeros, float64
 from time import perf_counter
 import matplotlib.pylab as plt
