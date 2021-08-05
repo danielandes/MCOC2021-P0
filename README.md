@@ -1,5 +1,21 @@
 # MCOC2021-P0
 
+# Desempeño MATMUL
+![ImagenProducida](https://user-images.githubusercontent.com/88337429/128415382-1d396dd5-6fc5-4407-980d-0e0a5d301b03.png)
+
+* ¿Cómo difiere del gráfico del profesor/ayudante?
+  * Se puede observar que en las zonas intermedias del grafico se obtuvieron tiempos menores a los del profesor/ayudante, mientras que los iniciales presentan un salto bastante notable despues de la primera corrida, y para las matrices mas grandes no se presenta mucha diferencia.
+* ¿A qué se pueden deber las diferencias en cada corrida?
+  * La diferencia observada entre la primera corrida y las subsiguientes se puede deber a que al ejecutarse la matriz pequeña en las iteraciones, esta venia justo despues de la mas grande de la iteracion anterior, pudiendo realentizarse por una falta de memoria RAM al momento iniciar la siguiente iteracion (Si bien el sistema cuenta con 16GB RAM, gran parte ya se encontraba utilizada antes de ejecutar el programa por ultima vez), en el peor de los casos haciendo paginacion o tal vez simplemente no se encontraban disponibles los caches del cpu, que es la que podria afectar mas la eficiencia de procesos pequeños.
+* El gráfico de uso de memoria es lineal con el tamaño de matriz, pero el de tiempo transcurrido no lo es ¿porqué puede ser?
+  * No es lineal en el grafico bilogaritmico porque al inicio la cpu recien comienza a asignar recursos
+* ¿Qué versión de python está usando?
+  * Se
+* ¿Qué versión de numpy está usando?
+  * Se
+* Durante la ejecución de su código ¿se utiliza más de un procesador? Muestre una imagen (screenshot) de su uso de procesador durante alguna corrida para confirmar. 
+  *  ![recursos2](https://user-images.githubusercontent.com/88337429/128415884-9c5adc74-b433-4ff7-abcd-f0627707b0c5.PNG)
+
 # Mi computador principal
 
 * Marca/modelo: -
@@ -39,7 +55,6 @@
 * Dirección IP (Interna, del router): 192.168.0.9
 * Dirección IP (Externa, del ISP): 190.160.0.15
 * Proveedor internet: VTR
-
 
 
 
