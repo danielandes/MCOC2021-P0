@@ -1,3 +1,9 @@
+# -*- coding: utf-8 -*-
+"""
+Created on Thu Aug  5 16:02:23 2021
+
+@author: aleki
+"""
 from numpy import zeros, float64
 from time import perf_counter
 import matplotlib.pylab as plt
@@ -13,7 +19,8 @@ for i in lectura:
     Tiempotxt.append(float(valores[1]))
     Ntxt.append(float(valores[2]))
 lectura.close()
-
+a=len(Ntxt)/10
+a=int(a)
 
 #Graficar
 xlabels= ["10","20","50","100","200","500","1000","2000","5000","10000","20000"]
@@ -28,7 +35,7 @@ plt.figure(1)
 plt.subplot(2,1,1)
 plt.title("Rendimiento A@B")
 for i in range(10):
-    plt.loglog(Ntxt[10*i:10*i+10],Tiempotxt[10*i:10*i+10], marker="o")
+    plt.loglog(Ntxt[a*i:a*i+a],Tiempotxt[a*i:a*i+a], marker="o")
 plt.xticks(xN,xlabels, rotation=60, visible=False)
 plt.grid(True)
 plt.yticks(ytiempoT,ytiempolabels)
