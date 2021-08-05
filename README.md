@@ -1,7 +1,8 @@
 # MCOC2021-P0
 
 # Desempeño MATMUL
-![ImagenProducida](https://user-images.githubusercontent.com/88337429/128415382-1d396dd5-6fc5-4407-980d-0e0a5d301b03.png)
+![ImagenProducida](https://user-images.githubusercontent.com/88337429/128420566-253e2029-4ec9-4069-bfd6-27ba2f8cd176.png)
+
 
 * ¿Cómo difiere del gráfico del profesor/ayudante?
   * Se puede observar que en las zonas intermedias del grafico se obtuvieron tiempos menores a los del profesor/ayudante, mientras que los iniciales presentan un salto bastante notable despues de la primera corrida, y para las matrices mas grandes no se presenta mucha diferencia.
