@@ -55,6 +55,6 @@
 * ¿Qué versión de numpy está usando?
   * 1.18.1
 * Durante la ejecución de su código ¿se utiliza más de un procesador? Muestre una imagen (screenshot) de su uso de procesador durante alguna corrida para confirmar. 
-  * Se usan los 6 procesadores disponibles 
+  * Se usan los 6 nucleos disponibles para mayor eficiencia
   * ![recursos2](https://user-images.githubusercontent.com/88337429/128415884-9c5adc74-b433-4ff7-abcd-f0627707b0c5.PNG)
 
