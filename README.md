@@ -59,6 +59,12 @@
   * ![recursos2](https://user-images.githubusercontent.com/88337429/128415884-9c5adc74-b433-4ff7-abcd-f0627707b0c5.PNG)
 
 # Desempeño INV
+* En mi sistema:
+  * np.half se intenta promover a np.single pero arroja el error "array type float16 is unsupported in linalg" en la inversion.
+  * np.single se comporta como 32bits
+  * np.double se comporta como 64bits
+  * np.longdouble se intenta degradar a np.double pero arroja el error "array type float64 is unsupported in linalg" en la inversion
+* Entre los tipos de datos se observa que la libreria de scipy es mas eficiente que numpy en el uso de CPU y tiempo necesario para realizar la inversion de las matrices, asi tambien se observa que el half de scipy se promueve a single para la matriz invertida mientras que el longdouble de scipy se degrada a double para la matriz original e invertida debido al funcionamiento de la libreria y mi sistema. Entre
 * ¿Qué algoritmo de inversión cree que utiliza cada método (ver wiki)? Justifique claramente su respuesta.
   * Se t
 * ¿Como incide el paralelismo y la estructura de caché de su procesador en el desempeño en cada caso? Justifique su comentario en base al uso de procesadores y memoria observado durante las corridas.
