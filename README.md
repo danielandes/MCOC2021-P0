@@ -60,6 +60,6 @@
 
 # Desempeño INV
 *¿Qué algoritmo de inversión cree que utiliza cada método (ver wiki)? Justifique claramente su respuesta.
-  *Se
+  *Se t
 *¿Como incide el paralelismo y la estructura de caché de su procesador en el desempeño en cada caso? Justifique su comentario en base al uso de procesadores y memoria observado durante las corridas.
   *Influira en la eficiencia de los calculos, el cache permitira realizar calculos con memoria mas cercana y el adecuado trabajo en paralelo permitira utilizar todos los nucleos al maximo. En este caso la principal diferencia se observa entre las corridas con numpy y scipy. Con numpy se observa que la CPU alcanza cargas maximas de 70% mientras que con scipy se alcanzan 99% de carga,asi tambien se observa que las corridas con scipy son mas rapidas que las de numpy (diferencias mejor observables en los datos.txt) y el uso de memoria (observable a traves de task manager) de numpy es mayor al de scipy siendo que teoricamente las matrices utilizan la misma memoria para guardarse. Por lo que scipy aprovecha mejor los nucleos en trabajo en paralelo y sus algoritmos de inversion son mas eficientes que numpy.
