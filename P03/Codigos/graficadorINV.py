@@ -45,7 +45,7 @@ for nombre in Nombres:
     plt.xticks(xN,xlabels, rotation=60)
     plt.yticks(ymemoriaB,ymemorialabels)
     plt.grid(True)
-    plt.axhline(y=0.8*10**10, linestyle="--", color="black")
+    plt.axhline(y=1.6*10**10, linestyle="--", color="black")
     plt.ylabel("Uso memoria")
     plt.xlabel("Tamano matriz N")
     plt.show()
