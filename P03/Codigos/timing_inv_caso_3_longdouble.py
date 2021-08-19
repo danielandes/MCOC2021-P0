@@ -1,4 +1,4 @@
-from scipy import longdouble
+from numpy import longdouble
 from time import perf_counter
 import matplotlib.pylab as plt
 from scipy.linalg import inv
