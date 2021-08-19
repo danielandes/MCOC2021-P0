@@ -1,7 +1,7 @@
 from numpy import zeros, float64
 from time import perf_counter
 import matplotlib.pylab as plt
-#Recuperacion de datos desde el archivo
+#Recuperacion de datos desde el archivo.
 
 Nombres= ["recursos_inv_caso_1_single.txt","recursos_inv_caso_1_double.txt","recursos_inv_caso_2_half.txt","recursos_inv_caso_2_single.txt","recursos_inv_caso_2_double.txt","recursos_inv_caso_2_longdouble.txt","recursos_inv_caso_3_half.txt","recursos_inv_caso_3_single.txt","recursos_inv_caso_3_double.txt","recursos_inv_caso_3_longdouble.txt"] #["recursos_inv_caso_1_single.txt","recursos_inv_caso_1_half.txt"]
 for nombre in Nombres:
