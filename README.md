@@ -60,7 +60,7 @@
 
 # Desempeño INV
 * En mi sistema:
-  * np.half se intenta promover a np.single pero arroja el error "array type float16 is unsupported in linalg" en la inversion.
+  * np.half arroja el error "array type float16 is unsupported in linalg" en la inversion.
   * np.single se comporta como 32bits
   * np.double se comporta como 64bits
   * np.longdouble se intenta degradar a np.double pero arroja el error "array type float64 is unsupported in linalg" en la inversion
