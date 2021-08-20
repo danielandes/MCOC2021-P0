@@ -75,7 +75,7 @@
 ![compAfloat](https://user-images.githubusercontent.com/88337429/130302682-245c5b5b-b770-49d6-8c14-58ab55ea382d.png)
 ![compBdouble](https://user-images.githubusercontent.com/88337429/130302697-3a56d8b8-40fb-4e66-8c4c-8e68d40ef229.png)
 ![compBfloat](https://user-images.githubusercontent.com/88337429/130302704-84119ef2-b538-42fb-bb0d-c689d455a067.png)
-
+* (Comparaciones puntuales se encuentran en la carpeta de la entrega)
 * ¿Como es la variabilidad del tiempo de ejecucion para cada algoritmo? 
   * Para A, se observa que el invertir la matriz para luego hacer matmul consume mas tiempo que cualquier opcion de solve para matrices mas grandes que 50x50 tanto para datos tipo float como double. Siendo el uso de assume_a="pos" el mas rapido para ambos tipos de datos tanto para matrices pequeñas como grandes, el cual tiene un comportamiento similar a assume_a="sym" hasta que se empieza a trabajar con matrices mas grandes. Entre los tipos de dato float y double se observa que para todos los casos float es mas rapido, lo cual es de esperar ya que se requiere trabajar con menos bits. Cabe destacar que la diferencia de tipo de dato fue mas notable para el caso I, donde double llego a tardar el doble que float, mientras que para los otros casos las diferencias no son mayores al 30%.
   * Para B, se observa que los casos mas lentos corresponden a II y V con sus variantes, mientras que los casos I, III y IV entregan resultados similares, siendo III_float el mas rapido sin mejoras de desempeño observables por el uso de overwrite. 
