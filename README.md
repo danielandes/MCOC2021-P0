@@ -83,3 +83,7 @@
   * En el caso de B se observa un comportamiento similar a lo largo de las corridas.
  * ¿A que se puede deber la superioridad de cada opción?
    * Se debe a las estrategias que utilizan los algoritmos que llama cada funcion para la resolucion de los problemas, donde algunas seran mas optimas que otras dependiendo de los casos, asi tambien que tan optimizadas son las librerias para utilizar el CPU. Por ejemplo en los casos II y V de B, la CPU se encontraba con carga en uno o dos nucleos la mayoria del tiempo, coincidiendo con que estos casos fueron los mas lentos. Mientras que para el caso III de A se utilizaron todos los nucleos a menor carga que los otros casos de A, y aun asi logro mejor desempeño ya que el algoritmo requiere menos calculos pero sigue aprovechando todos los nucleos.
+* ¿Su computador usa más de un proceso por cada corrida?
+  * La mayoria de los casos utiliza todos los nucleos a carga maxima, a excepcion de los casos II y V de B donde se utilizaron uno o dos nucleos. 
+* ¿Que hay del uso de memoria (como crece)? 
+  * El uso de memoria
