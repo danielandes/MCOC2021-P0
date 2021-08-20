@@ -73,4 +73,8 @@
 # Desempeño SOLVE y EIGH
 * ¿Como es la variabilidad del tiempo de ejecucion para cada algoritmo? 
   * Para A, se observa que el invertir la matriz para luego hacer matmul consume mas tiempo que cualquier opcion de solve para matrices mas grandes que 50x50 tanto para datos tipo float como double. Siendo el uso de assume_a="pos" el mas rapido para ambos tipos de datos tanto para matrices pequeñas como grandes, el cual tiene un comportamiento similar a assume_a="sym" hasta que se empieza a trabajar con matrices mas grandes. Entre los tipos de dato float y double se observa que para todos los casos float es mas rapido, lo cual es de esperar ya que se requiere trabajar con menos bits. Cabe destacar que la diferencia de tipo de dato fue mas notable para el caso I, donde double llego a tardar el doble que float, mientras que para los otros casos las diferencias no son mayores al 30%.
-  * Para B, se observa que los casos mas lentos corresponden a II y V con sus variantes, mientras que los casos I, III y IV entregan resultados similares, siendo III_float el mas rapido sin mejoras de desempeño observables por el uso de overwrite.
+  * Para B, se observa que los casos mas lentos corresponden a II y V con sus variantes, mientras que los casos I, III y IV entregan resultados similares, siendo III_float el mas rapido sin mejoras de desempeño observables por el uso de overwrite. 
+* ¿Qué algoritmo gana (en promedio) en cada caso?
+  * Para A gana el caso III assume_a="pos" con dato float para todos los tamaños de matrices utilizados.
+  * Para B gana el caso III driver="evd" con dato float sin diferencia entre overwrite_a=True/false.
+  * Aunque se debe tener en cuenta que al utilizar menos bits se pierde precision en el resultado.
