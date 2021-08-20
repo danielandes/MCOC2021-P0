@@ -78,3 +78,8 @@
   * Para A gana el caso III assume_a="pos" con dato float para todos los tamaños de matrices utilizados.
   * Para B gana el caso III driver="evd" con dato float sin diferencia entre overwrite_a=True/false.
   * Aunque se debe tener en cuenta que al utilizar menos bits se pierde precision en el resultado.
+* ¿Depende del tamaño de la matriz?
+  * Para los casos de A se observa que los comportamientos varian bastante entre ellos para matrices menores a 1000x1000, siendo algunos mas rapidos para tamaños menores y luego mas lentos que otros casos para tamaños mayores.
+  * En el caso de B se observa un comportamiento similar a lo largo de las corridas.
+ * ¿A que se puede deber la superioridad de cada opción?
+   * Se debe a las estrategias que utilizan los algoritmos que llama cada funcion para la resolucion de los problemas, donde algunas seran mas optimas que otras dependiendo de los casos, asi tambien que tan optimizadas son las librerias para utilizar el CPU. Por ejemplo en los casos II y V de B, la CPU se encontraba con carga en uno o dos nucleos la mayoria del tiempo, coincidiendo con que estos casos fueron los mas lentos. Mientras que para el caso III de A se utilizaron todos los nucleos a menor carga que los otros casos de A, y aun asi logro mejor desempeño ya que el algoritmo requiere menos calculos pero sigue aprovechando todos los nucleos.
