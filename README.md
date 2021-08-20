@@ -91,4 +91,4 @@
 * ¿Su computador usa más de un proceso por cada corrida?
   * La mayoria de los casos utiliza todos los nucleos a carga maxima, a excepcion de los casos II y V de B donde se utilizaron uno o dos nucleos. 
 * ¿Que hay del uso de memoria (como crece)? 
-  * El uso de memoria sera mayor para double. En ambos casos el crecimiento tendra el mismo comportamiento que las entregas anteriores, donde se vera crecer linealmente en el grafico loglog por su complejidad N^a
+  * El uso de memoria sera mayor para double. En ambos casos el crecimiento tendra el mismo comportamiento que las entregas anteriores, donde se vera crecer linealmente en el grafico loglog por su complejidad N^m
