@@ -92,3 +92,7 @@
   * La mayoria de los casos utiliza todos los nucleos a carga maxima, a excepcion de los casos II y V de B donde se utilizaron uno o dos nucleos. 
 * ¿Que hay del uso de memoria (como crece)? 
   * El uso de memoria sera mayor para double. En ambos casos el crecimiento tendra el mismo comportamiento que las entregas anteriores, donde se vera crecer linealmente en el grafico loglog por su complejidad N^m
+
+# P0E5 - Matrices dispersas y complejidad computacional
+![graficosllena](https://user-images.githubusercontent.com/88337429/131049355-b8da4543-4690-4b96-a62c-e1e61f6638af.png)
+![graficosdispersa](https://user-images.githubusercontent.com/88337429/131049358-9045e689-9b26-4ceb-a42a-6366af454fc5.png)
