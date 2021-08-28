@@ -114,6 +114,6 @@ def laplaciana(N, a):
 * Para las matrices llenas y laplaciana utilizada, estas se ensamblan con complejidad entre O(N1) y O(N2) para los tamaños utilizados, donde hacia los ultimos tamaños se comienza a parecer mas a una complejidad O(N2).
 Mientras que su solucion se comporta en su mayoria con complejidad O(N2), y mas cercana a O(N3) para los tamaños mas altos.
 
-* Para las matrices dispersas se utiliza la misma funcion para generar las laplacianas, es decir, como matriz llena, la cual luego es convertida a una matriz dispersa. 
+* Para las matrices dispersas se utiliza la misma funcion para ensamblar las laplacianas, es decir, como matriz llena, la cual luego es convertida a una matriz dispersa. 
 Esto supone un aumento en la complejidad a O(N2) para tamaños en los cuales anteriormente se obtenia una complejidad mas cercana a O(N1). 
 Sin embargo este gasto de recursos es justificado ya que se obtienen tiempos de solucion menores debido a su comportamiento lineal con pendiente suave que bien podria considerarse complejidad constante, resultando en que el tiempo total sea menor gracias a que solo se deban calcular los valores que no sean cero.
