@@ -96,3 +96,16 @@
 # P0E5 - Matrices dispersas y complejidad computacional
 ![graficosllena](https://user-images.githubusercontent.com/88337429/131049355-b8da4543-4690-4b96-a62c-e1e61f6638af.png)
 ![graficosdispersa](https://user-images.githubusercontent.com/88337429/131049358-9045e689-9b26-4ceb-a42a-6366af454fc5.png)
+  
+from numpy import zeros
+def laplaciana(N, a):
+    A = zeros((N,N), dtype=a)
+    for i in range(N):
+        A[i,i]=2
+        for j in range(i-1,i):
+            if abs(i-j)==1:
+                A[i,j]=-1
+                A[j,i]=-1
+        A[0,N-1]=0
+        A[N-1,0]=0
+    return(A)
