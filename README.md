@@ -116,4 +116,4 @@ Mientras que su solucion se comporta en su mayoria con complejidad O(N2), y mas 
 
 * Para las matrices dispersas se utiliza la misma funcion para generar las laplacianas, es decir, como matriz llena, la cual luego es convertida a una matriz dispersa. 
 Esto supone un aumento en la complejidad a O(N2) para tamaños en los cuales anteriormente se obtenia una complejidad mas cercana a O(N1). 
-Sin embargo este gasto de recursos es justificado ya que se obtienen tiempos de solucion menores debido a su comportamiento lineal con pendiente suave que bien podria considerarse complejidad lineal, resultando en que el tiempo total sea menor.
+Sin embargo este gasto de recursos es justificado ya que se obtienen tiempos de solucion menores debido a su comportamiento lineal con pendiente suave que bien podria considerarse complejidad lineal, resultando en que el tiempo total sea menor gracias a que solo se deban calcular los valores que no sean cero.
