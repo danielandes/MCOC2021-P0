@@ -111,3 +111,4 @@ def laplaciana(N, a):
         A[N-1,0]=0
     return(A)
 ```
+
