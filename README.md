@@ -136,4 +136,6 @@ def laplaciana_dispersa(N, a):
 (Se cambio el ensamblaje de la laplaciana para poder comparar mejor para las matrices dispersas)
 * Para el ensamblaje de las matrices llenas se reconoce una complejidad O(N2), mientras que para las dispersas se ensamblan con complejidad O(N1) muy cercana a ser constante.
  
-  Para
+  Para las soluciones de solve: En el caso de matriz llena se observa una complejidad O(N2) que se mantiene a partir de N=200. En el caso de matriz dispersa se observa una complejidad entre O(N1) y O(N2), y que comparativamente permite trabajar matrices mas grandes en menor tiempo.
+  
+  Para las soluciones de inv: Se observa que ambos presentan complejidad O(N2) y no se observan diferencias tan notables entre los tiempos de llena y dispersa como en el caso de solve.
