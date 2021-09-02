@@ -117,3 +117,8 @@ Mientras que su solucion se comporta en su mayoria con complejidad O(N2), y mas 
 * Para las matrices dispersas se utiliza la misma funcion para ensamblar las laplacianas, es decir, como matriz llena, la cual luego es convertida a una matriz dispersa. 
 Esto supone un aumento en la complejidad a O(N2) para tamaños en los cuales anteriormente se obtenia una complejidad mas cercana a O(N1). 
 Sin embargo este gasto de recursos es justificado ya que se obtienen tiempos de solucion menores debido a su comportamiento lineal con pendiente suave que bien podria considerarse complejidad constante, resultando en que el tiempo total sea menor gracias a que solo se deban calcular los valores que no sean cero.
+# P0E6 - Matrices dispersas y complejidad computacional (2)
+![solve_llena](https://user-images.githubusercontent.com/88337429/131909657-ca6f3667-496f-4d3c-8934-7cfc7e270c2e.png)
+![solve_dispersa](https://user-images.githubusercontent.com/88337429/131909668-cdd9af78-fd5e-4e8e-9d14-c65a2855143f.png)
+![inv_llena](https://user-images.githubusercontent.com/88337429/131909679-4dff296f-040b-4b30-9b15-9be81ce6a211.png)
+![inv_dispersa](https://user-images.githubusercontent.com/88337429/131909686-a54e8eae-0456-40e6-831d-c520e2245f13.png)
