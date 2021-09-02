@@ -133,7 +133,7 @@ def laplaciana_dispersa(N, a):
     e=sparse.eye(N, dtype=a)-sparse.eye(N,N,1, dtype=a)
     return(e+e.T)
 ```
-(Se cambio el ensamblaje de la laplaciana para poder comparar mejor para las matrices dispersas, se utilizo overwrite_a=True para INV y assume_a="pos" para SOLVE llenas)
+(Se cambio el ensamblaje de la laplaciana para poder comparar mejor para las matrices dispersas, ademas se utilizo overwrite_a=True para INV y assume_a="pos" para SOLVE llenas)
 * Generalmente se observa que el uso de matrices de dispersas genera un aumento de eficiencia en el uso de tiempo para su ensamblaje y solucion, lo cual era de esperar ya que las matrices laplacianas son mayoritariamente ceros. Sin embargo no se observan mejoras en el tiempo de solucion de la matriz inversa, pero si se observa que el uso de CPU se reduce desde un 97% a un 20% con tiempos similares.
 * Para el ensamblaje de las matrices llenas se reconoce una complejidad O(N2), mientras que para las dispersas se ensamblan con complejidad O(N1) muy cercana a ser constante.
  
