@@ -133,3 +133,5 @@ def laplaciana_dispersa(N, a):
     e=sparse.eye(N, dtype=a)-sparse.eye(N,N,1, dtype=a)
     return(e+e.T)
 ```
+(Se cambio el ensamblaje de la laplaciana para poder comparar mejor para las matrices dispersas)
+* Para el ensamblaje de las matrices llenas se reconoce una complejidad O(N2)
