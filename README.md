@@ -139,3 +139,4 @@ def laplaciana_dispersa(N, a):
   Para las soluciones de solve: En el caso de matriz llena se observa una complejidad O(N2) que se mantiene a partir de N=200. En el caso de matriz dispersa se observa una complejidad entre O(N1) y O(N2), y que comparativamente permite trabajar matrices mas grandes en menor tiempo.
   
   Para las soluciones de inv: Se observa que ambos presentan complejidad O(N2) y no se observan diferencias tan notables entre los tiempos de llena y dispersa como en el caso de solve.
+* El tamaño de las matrices afecta el comportamiento aparente cuando los tamaños son muy pequeños, ya que sus tiempos estan mas ligados a lo que tardan en entrar en cache que a la tendencia de la complejidad del algoritmo. Se nota que las complejidades de los algoritmos usados se encuentran bastante definidos para N=500 en adelante.
