@@ -135,4 +135,5 @@ def laplaciana_dispersa(N, a):
 ```
 (Se cambio el ensamblaje de la laplaciana para poder comparar mejor para las matrices dispersas)
 * Para el ensamblaje de las matrices llenas se reconoce una complejidad O(N2), mientras que para las dispersas se ensamblan con complejidad O(N1) muy cercana a ser constante.
-  Para
+ 
+ Para
