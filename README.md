@@ -122,3 +122,14 @@ Sin embargo este gasto de recursos es justificado ya que se obtienen tiempos de 
 ![solve_dispersa](https://user-images.githubusercontent.com/88337429/131909668-cdd9af78-fd5e-4e8e-9d14-c65a2855143f.png)
 ![inv_llena](https://user-images.githubusercontent.com/88337429/131909679-4dff296f-040b-4b30-9b15-9be81ce6a211.png)
 ![inv_dispersa](https://user-images.githubusercontent.com/88337429/131909686-a54e8eae-0456-40e6-831d-c520e2245f13.png)
+```
+import scipy.sparse as sparse
+from numpy import zeros, eye
+def laplaciana(N, a):
+
+    e=eye(N)-eye(N,N,1)
+    return(a(e+e.T))
+def laplaciana_dispersa(N, a):   
+    e=sparse.eye(N, dtype=a)-sparse.eye(N,N,1, dtype=a)
+    return(e+e.T)
+```
