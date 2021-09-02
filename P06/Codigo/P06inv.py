@@ -53,7 +53,7 @@ for a in range(10):
 
 
 
-#Creacion del archivo para guardar datos
+#Creacion del archivo para guardar datos.
 archivo= open("inv_dispersa.txt", "w+")
 for i in range(len(N2*10)):
     archivo.write(str(UsoTiempo_ens2[i])+" "+str(UsoTiempo_sol2[i])+" "+str(Nlista2[i])+" "+"\n")
